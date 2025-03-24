@@ -41,8 +41,33 @@
 }
 
 .Main-div {
+  overflow: hidden;
   display: flex;
   width: 80%;
+}
+
+.Producto{
+  position:absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.inactivo-arriba {
+  top: -100%;
+}
+
+.inactivo-abajo {
+  top: 150%;
+  transform: translate(-50%, -50%);
+}
+
+.activo{
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 

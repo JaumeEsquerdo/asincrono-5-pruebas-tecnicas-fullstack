@@ -1,3 +1,4 @@
+
 import { Producto } from './components/Producto.jsx'
 import { Header } from './components/Header.jsx'
 import { Footer } from './components/Footer.jsx'
@@ -9,9 +10,7 @@ function Layout() {
     <>
       <Header />
 
-      <main className='Main'>
-        <button>Product Details</button>
-      </main>
+      <Producto/>
 
       <Footer />
 

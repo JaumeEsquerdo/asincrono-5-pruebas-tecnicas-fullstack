@@ -1,4 +1,11 @@
 export const Producto = () => {
-    return ( <div></div> );
+    return (
+    <main className='Main'>
+        <div className="Main-div">
+            <button className='Btn-details'>Product Details</button>
+        </div>
+        
+    </main>
+    );
 }
- 
+

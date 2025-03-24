@@ -1,15 +1,17 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.Root{
+
+.Root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 /* Header */
-.Header{
+.Header {
   display: flex;
   width: 100%;
   height: 10vh;
@@ -17,19 +19,19 @@
   padding: 40px 0;
 }
 
-.Header-div{
+.Header-div {
   display: flex;
   width: 80%;
   justify-content: space-between;
 }
 
-.Header-btn{
+.Header-btn {
   width: 40px;
   height: 40px;
 }
 
 /* Main */
-.Main{
+.Main {
   display: flex;
   flex: 1;
   width: 100%;
@@ -38,13 +40,13 @@
   align-items: center;
 }
 
-.Main-div{
+.Main-div {
   display: flex;
   width: 80%;
 }
 
 
-.Btn-details{
+.Btn-details {
   width: 150px;
   height: 40px;
   background-color: black;
@@ -53,7 +55,7 @@
 }
 
 /* Footer */
-.Footer{
+.Footer {
   height: 10vh;
   width: 100%;
   display: flex;
@@ -62,13 +64,22 @@
   border-top: 1px solid rgb(224, 223, 223);
 }
 
-.Footer-div{
+.Footer-div {
   display: flex;
   width: 80%;
-  
+
 }
-.Footer-product{
+
+.Footer-product {
   display: flex;
   flex-direction: column;
-  padding: 30px 100px 20px 0 ;
+  padding: 30px 100px 20px 0;
+  cursor: pointer;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.gris {
+  color: rgb(188, 183, 183);
+
 }

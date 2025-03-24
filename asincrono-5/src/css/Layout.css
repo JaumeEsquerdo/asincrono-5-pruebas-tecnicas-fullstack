@@ -108,10 +108,17 @@
   cursor: pointer;
   color: black;
   transition: color 0.5s ease;
+  border-top: 2px solid black;
+  transition: border-top 0.6s ease-in;
 }
 
 .gris {
   color: rgb(188, 183, 183);
+
+}
+
+.Footer-product.gris{
+  border-top: 2px solid transparent;
 
 }
 

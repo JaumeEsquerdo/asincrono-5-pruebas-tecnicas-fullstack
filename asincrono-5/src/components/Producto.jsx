@@ -10,12 +10,15 @@ export const Producto = () => {
 
     const { productoActivo, activarProducto } = useContext(ProductoContext)
 
+    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000"
+
+
     //fetch productos
     useEffect(() => {
 
         const fetchProductos = async () => {
             try {
-                const response = await fetch("http://localhost:3000/api/v1/productos")
+                const response = await fetch(`${BACKEND_URL}/api/v1/productos`)
                 const jsonData = await response.json()
                 console.log(jsonData)
                 setProducto1(jsonData.data[0]) //primer producto

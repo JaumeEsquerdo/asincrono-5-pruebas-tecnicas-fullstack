@@ -1,6 +1,8 @@
 # asincrono-5-pruebas-tecnicas-fullstack
 
-ver en vercel: https://asincrono-5-pruebas-tecnicas-fullstack.vercel.app/
+Para ver el resultado en Vercel...
+- Front: https://asincrono-5-pruebas-tecnicas-fullstack.vercel.app/
+- Backend: https://asincrono-5-pruebas-tecnicas-fullstack-xtde.vercel.app/
 
 
 # Prueba técnica de Fullstack Junior

@@ -1,5 +1,7 @@
 # asincrono-5-pruebas-tecnicas-fullstack
 
+ver en vercel: https://asincrono-5-pruebas-tecnicas-fullstack.vercel.app/
+
 
 # Prueba técnica de Fullstack Junior
 

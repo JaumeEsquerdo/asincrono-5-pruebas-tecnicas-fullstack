@@ -56,6 +56,8 @@
 .Producto {
   position: absolute;
   left: 50%;
+  display: flex;
+  width: 100%;
 
   transform: translate(-50%, -50%);
   transition: top 0.8s ease-in-out, opacity 0.8s ease-in-out;
@@ -204,4 +206,13 @@
   font-size: 1rem;
   color: rgb(166, 166, 166);
   padding: 10px 0;
+}
+.activeImg{
+  color: white;
+}
+.Sofa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -4,12 +4,12 @@ import { ProductoContext } from "../../context/ProductoContext";
 export const Lightbox = () => {
     const { lightbox, cerrarLightbox } = useContext(ProductoContext)
     const [submenuAbierto, setSubmenuAbierto] = useState(false)
-
+    const [mostrarImg, setMostrarImg] = useState(false)
 
     if (!lightbox) return null
 
     const toggleSubmenu = () => setSubmenuAbierto(!submenuAbierto)
-
+    const toggleImg = () => setMostrarImg(!mostrarImg)
     return (
         <>
 
@@ -24,7 +24,7 @@ export const Lightbox = () => {
                             Collection
 
                             <ul className={`Submenu ${submenuAbierto ? "open" : ""}`} onClick={(e)=> e.stopPropagation()}>
-                                <li className="Submenu-li">Furniture</li>
+                                <li className={`Submenu-li ${mostrarImg?"activeImg":""}`} onClick={toggleImg}>Furniture</li>
                                 <li className="Submenu-li">Lighting</li>
                                 <li className="Submenu-li">Accessories</li>
                             </ul>
@@ -36,6 +36,12 @@ export const Lightbox = () => {
                         <li className="Lightbox-li">Ethics</li>
                     </ul>
                 </div>
+
+                {mostrarImg && (
+                
+                    <img className="Sofa" src="/imgs/sofa_blanco.png" alt="Sofa blanco" />
+                )
+                }
 
                 <footer className="Lightbox-footer">
                     <nav className="Lightbox-nav">
